@@ -1,73 +1,45 @@
 import "./App.scss";
-import gabinet from "./gabinet.jpg";
-import logo from "./logo.png";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-function Home() {
-	let navigate = useNavigate();
-	const routeChange = () => {
-		let path = `/about`;
-		navigate(path);
-	};
+import Collapsible from "./components/collapsible";
+import ScrollToTop from "./components/scroll-button";
+function Cennik() {
 	return (
 		<div className='container'>
-			<div className='nav'>
-				<div className='logo'>
-					<img src={logo} alt='logo bezpieczna przystan'></img>
-				</div>
-				<div className='dropdown'>
-					<ul>
-						<li>
-							<a href='Home'>Strona główna</a>
-						</li>
-						<li>
-							<a href='Home'>Usługi</a>
-						</li>
-						<li>
-							<a href='About'>O nas</a>
-						</li>
-						<li>
-							<a href='Cennik'>Cennik</a>
-						</li>
-						<li>
-							<a href='Home'>Gabinet</a>
-						</li>
-						<li>
-							<a href='Home'>Kontakt</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div className='list'>
-				<table>
-					<tr>
+			<nav>
+				<ScrollToTop />
+				<Collapsible></Collapsible>
+			</nav>
+			<div className='home'>
+				<table className='home__table'>
+					<tr className='home__table-item'>
 						<td>Usługa</td>
 						<td>Czas trwania</td>
 						<td>Cena</td>
 					</tr>
-					<tr>
+					<tr className='home__table-item'>
 						<td>Konsultacja psychologiczna</td>
 						<td>50 min. </td>
 						<td>150 zł</td>
 					</tr>
-					<tr>
+					<tr className='home__table-item'>
 						<td>Konsultacja psychoterapetyczna</td>
 						<td>50 min.</td>
 						<td>150 zł</td>
 					</tr>
-					<tr>
+					<tr className='home__table-item'>
 						<td>Psychoterpia indywidualna</td>
 						<td>50 min.</td>
 						<td>150 zł</td>
 					</tr>
-					<tr>
+					<tr className='home__table-item'>
 						<td>Opinia psychologiczna*</td>
 						<td>-</td>
 						<td>150 zł</td>
 					</tr>
 				</table>
-				<p className='under_table'>
+				<p className='home__under-table'>
 					* - Wystawiamy opinie dotyczące aktualnego stanu psychicznego osoby
 					badanej, w tym opinie na potrzeby Komisji ds. Orzekania o
 					Niepełnosprawności. Opinia jest wystawiana na podstawie wywiadu,
@@ -86,4 +58,4 @@ function Home() {
 	);
 }
 
-export default Home;
+export default Cennik;
