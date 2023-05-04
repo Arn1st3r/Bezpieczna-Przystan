@@ -16,6 +16,7 @@ body {
 	font-family: Montserrat, sans-serif;
 	padding: 0;
 	margin: 0;
+	overflow-x: hidden;
 }
 .container {
 	background-image: url("./components/galery/galery/background.jpg");
@@ -174,7 +175,7 @@ a:hover {
 	&__table {
 		border-spacing: 0;
 		width: 57%;
-		font-size: 17px;
+		font-size: 15px;
 	}
 	&__table-item:first-child {
 		border: none;
@@ -232,27 +233,33 @@ a:hover {
 		line-height: 35px;
 		animation-name: slideInLeft;
 		animation-duration: 2s;
-		animation-timing-function: ease-out;
+		animation-timing-function: linear;
 		animation-direction: normal;
-		font-size: 75px;
-		animation-fill-mode: forwards;
-		margin-top: 40px;
-		margin-left: 50px;
+		font-size: 65px;
+		position: absolute;
+		top: 350px;
+		min-height: 100%;
+		left: 30px;
 	}
 	&__heading--first {
-		white-space: nowrap;
-		margin: auto 0;
-		animation-duration: 2.5s;
-		animation-name: typing 3s;
-		font-size: 75px;
-		margin-top: 300px;
+		animation-duration: 2s;
+		animation-direction: normal;
+		animation-timing-function: linear;
+		animation-name: slideInRight;
+		font-size: 65px;
+		position: absolute;
+		overflow-x: hidden;
+		overflow-y: hidden;
+		overflow: hidden;
+		top: 250px;
+		left: 30px;
 	}
 	&__heading--button {
 		border: none;
 		width: 30%;
-		position: relative;
-		top: 15px;
-		left: 40px;
+		position: absolute;
+		top: 480px;
+		left: 30px;
 		padding: 20px;
 		border-radius: 0.625rem;
 		background-color: rgb(255, 248, 220);
@@ -379,29 +386,25 @@ a:hover {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		width: 60%;
-		margin-left: 150px;
 	}
 	&__icons--element {
-		width: 35%;
+		width: 30%;
+		position: relative;
+		left: 120px;
 	}
 	&__icons--down {
 		font-size: 25px;
-		margin-bottom: 0px;
+		margin-left: 128px;
 		font-weight: 700;
 	}
 	&__icons--down--last {
 		font-size: 25px;
-		position: relative;
-		top: 15px;
-		right: 8px;
+		margin-left: 120px;
 		font-weight: 700;
 	}
 	&__icons--down--second {
 		font-size: 25px;
-		position: relative;
-		top: 28px;
-		right: 8px;
+		margin-left: 120px;
 		font-weight: 700;
 	}
 	&__description--home {
@@ -409,6 +412,11 @@ a:hover {
 		color: black;
 		width: 90%;
 		line-height: 35px;
+	}
+	&__icons--fb {
+		width: 25%;
+		position: relative;
+		left: 140px;
 	}
 }
 .home .home__icons {
@@ -434,7 +442,19 @@ iframe {
 @keyframes slideInLeft {
 	from {
 		overflow: hidden;
-		transform: translateX(-1050px);
+		height: 100%;
+		transform: translateX(-1500px);
+	}
+	to {
+		overflow: visible;
+		transform: translateX(0);
+	}
+}
+@keyframes slideInRight {
+	from {
+		overflow-x: hidden;
+		overflow-y: hidden;
+		transform: translateX(1500px);
 	}
 	to {
 		overflow: visible;
@@ -449,15 +469,6 @@ iframe {
 	to {
 		overflow: visible;
 		transform: translateX(0);
-	}
-}
-
-@keyframes typing {
-	from {
-		width: 0%;
-	}
-	to {
-		width: 100%;
 	}
 }
 // tablet //
@@ -624,28 +635,31 @@ iframe {
 			margin-bottom: 3vh;
 		}
 		&__icons--email {
-			margin-top: 8px;
+			top: 0px;
 			width: 50px;
 			height: 50px;
+			position: relative;
 			background-color: $primary-color;
 		}
 		&__icons--phone {
-			margin-top: 8px;
+			position: relative;
+			top: -5px;
 			width: 50px;
 			height: 50px;
 			background-color: $primary-color;
 		}
 		&__icons--address {
+			position: relative;
 			width: 50px;
 			height: 50px;
-			margin-top: 8px;
+			top: 0px;
 			background-color: $primary-color;
 		}
 		&__icons--description {
 			position: relative;
 			bottom: 25px;
 			height: 50px;
-			padding: 20px;
+			padding: 35px;
 			font-weight: 700;
 			span {
 				font-size: 25px;
@@ -699,42 +713,47 @@ iframe {
 			color: white;
 		}
 		&__heading--first {
-			line-height: 0px;
-			animation-name: slideInLeft;
+			animation-name: slideInRight;
 			animation-duration: 1.5s;
-			animation-timing-function: ease-out;
+			animation-timing-function: linear;
 			animation-direction: normal;
-			font-size: 55px;
+			font-size: 65px;
 			animation-fill-mode: forwards;
-			margin-top: 30px;
-			margin-left: 200px;
+			position: absolute;
+			top: 320px;
+			left: 200px;
 			animation-delay: 0s;
 		}
 		&__heading--last {
-			white-space: nowrap;
-			margin: auto;
+			margin: auto 0;
 			animation-duration: 2.5s;
-			animation-name: typing;
+			animation-timing-function: linear;
+			animation-name: slideInLeft;
+			animation-fill-mode: forwards;
+			position: absolute;
+			height: 100%;
 			font-size: 50px;
-			margin-top: 400px;
+			top: 480px;
+			left: 200px;
 		}
 		&__heading--button {
 			border: none;
 			width: 15%;
 			top: 320px;
-			margin-left: 200px;
+			position: absolute;
+			left: 200px;
 			padding: 15px;
+			top: 530px;
 			border-radius: 0.3rem;
 			background-color: rgb(255, 248, 220);
 			font-weight: 700;
 			color: rgb(52, 48, 48);
 			font-size: 14px;
 			animation-duration: 3s;
-			animation-timing-function: ease-out;
+			animation-timing-function: linear;
 			animation-direction: normal;
-			animation-name: slideInLeft;
+			animation-name: slideInLeft2;
 			animation-fill-mode: forwards;
-			animation-delay: 0s;
 		}
 		&__heading--button:hover {
 			color: white;
@@ -748,30 +767,33 @@ iframe {
 			margin-left: 170px;
 		}
 		&__icons--element {
+			left: 0px;
 			width: 35%;
 		}
 		&__icons--down {
 			font-size: 25px;
-			margin-bottom: 0px;
-			font-weight: 700;
+			margin-left: 11px;
 		}
 		&__icons--down--last {
 			font-size: 25px;
-			position: relative;
-			top: 15px;
 			font-weight: 700;
+			margin-left: -3px;
 		}
 		&__icons--down--second {
 			font-size: 25px;
-			position: relative;
-			top: 28px;
 			font-weight: 700;
+			margin-left: 20px;
 		}
 		&__description--home {
 			text-align: center;
 			color: black;
 			width: 50%;
 			line-height: 30px;
+		}
+		&__icons--fb {
+			width: 25%;
+			position: relative;
+			left: 200px;
 		}
 	}
 	iframe {
@@ -793,6 +815,12 @@ iframe {
 	}
 	.second {
 		width: 40%;
+		position: relative;
+		top: -2px;
+	}
+	.last {
+		position: relative;
+		top: 7px;
 	}
 	.home .home__icons {
 		margin-top: 0;
@@ -901,6 +929,7 @@ footer {
 	bottom: 11px;
 	right: 11px;
 	position: fixed;
+	z-index: 101;
 	img {
 		width: 30px;
 		height: 40px;

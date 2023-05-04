@@ -36,7 +36,7 @@ function Cennik() {
 					<tr className='home__table-item'>
 						<td>Opinia psychologiczna*</td>
 						<td>-</td>
-						<td>150 zł</td>
+						<td>Ustalana indywidualnie</td>
 					</tr>
 				</table>
 				<p className='home__under-table'>
@@ -52,7 +52,10 @@ function Cennik() {
 				</p>
 			</div>
 			<footer>
-				<p> © Copyright 2023. Created and designed by Rafał Arnista</p>
+				<p>
+					© Copyright 2023. Created and designed by Rafał Arnista <br></br>
+					Icons created by Freepik - Flaticon
+				</p>
 			</footer>
 		</div>
 	);

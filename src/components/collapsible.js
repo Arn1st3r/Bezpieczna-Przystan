@@ -36,7 +36,7 @@ export default function Collapsible() {
 					</Link>
 				</li>
 				<li>
-					<Link className='menu__link' to='/About'>
+					<Link className='menu__link' to='/Onas'>
 						O nas
 					</Link>
 				</li>
@@ -51,7 +51,7 @@ export default function Collapsible() {
 					</Link>
 				</li>
 				<li className='menu__last_element'>
-					<Link className='menu__link' to='/Contact'>
+					<Link className='menu__link' to='/Kontakt'>
 						Kontakt
 					</Link>
 				</li>

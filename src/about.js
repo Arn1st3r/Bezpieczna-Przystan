@@ -93,22 +93,26 @@ function About() {
 							Poznawczej i Behawioralnej ( PTTPB). Swoją pracę poddaję
 							regularnej superwizji. Ukończyłam również liczne szkolenia w
 							nurcie terapii krótkoterminowej. Oprócz własnej praktyki pracuję w
-							Specjalnym Ośrodku Szkolno-Wychowawczym w Łupkach. W swojej pracy
-							stawiam na atmosferę akceptacji, zaufania i szacunku do drugiego
-							człowieka. Wychodzę z założenia, że ważnym czynnikiem leczącym
-							jest przede wszystkim relacja. W mojej pracy pragnę zachęcać do
-							rozumienia sytuacji pacjenta, poprzez pryzmat jego myśli i
-							zachowań, ale również poprzez pryzmat ważnych dla niego wartości.
-							Spotkania ze mną mogą pomóc Ci lepiej zrozumieć swój wewnętrzny
-							świat myśli, emocji i zachowań oraz odnaleźć sposoby na to, aby
-							przejść przez trudności czy kryzys. Zapewniam bezpieczną
-							przestrzeń, indywidualne podejście, życzliwość i akceptację.
+							Ośrodku Pomocy Psychologicznej i Psychoterapeutycznej dla Dzieci i
+							Młodzieży do 21 r. ż. w Ełku. W swojej pracy stawiam na atmosferę
+							akceptacji, zaufania i szacunku do drugiego człowieka. Wychodzę z
+							założenia, że ważnym czynnikiem leczącym jest przede wszystkim
+							relacja. W mojej pracy pragnę zachęcać do rozumienia sytuacji
+							pacjenta, poprzez pryzmat jego myśli i zachowań, ale również
+							poprzez pryzmat ważnych dla niego wartości. Spotkania ze mną mogą
+							pomóc Ci lepiej zrozumieć swój wewnętrzny świat myśli, emocji i
+							zachowań oraz odnaleźć sposoby na to, aby przejść przez trudności
+							czy kryzys. Zapewniam bezpieczną przestrzeń, indywidualne
+							podejście, życzliwość i akceptację.
 						</p>
 					</div>
 				</div>
 			</div>
 			<footer>
-				<p> © Copyright 2023. Created and designed by Rafał Arnista</p>
+				<p>
+					© Copyright 2023. Created and designed by Rafał Arnista <br></br>
+					Icons created by Freepik - Flaticon
+				</p>
 			</footer>
 		</div>
 	);

@@ -37,21 +37,22 @@ function Gabinet() {
 			<div className='home'>
 				<h1 className='home__headline'>Gabinet</h1>
 				<p className='home__description--gab'>
-					Wchodząc do gabinetu psychologicznego, natychmiast czujemy się
-					przyjemnie i spokojnie. Wszystko zostało zaprojektowane w taki sposób,
-					aby stworzyć atmosferę relaksu i bezpieczeństwa dla pacjenta. W
-					gabinecie panuje cisza i spokój, a terapeuta jest uważny i empatyczny,
-					co dodatkowo przyczynia się do poczucia bezpieczeństwa pacjenta. To
-					miejsce, w którym pacjent może swobodnie wyrażać swoje emocje i
-					przeżycia, wiedząc, że znajduje się w bezpiecznym i przyjaznym
-					otoczeniu.
+					Wnętrza zostały zaprojektowane w taki sposób, aby stworzyć atmosferę
+					relaksu i bezpieczeństwa dla pacjenta. W oczekiwaniu na spotkanie
+					możemy swobodnie zaczekać na wcześniej umówioną wizytę w przyjemnej
+					poczekalni. Nasz gabinet to miejsce, w którym pacjent może swobodnie
+					wyrażać swoje emocje i przeżycia, wiedząc, że znajduje się w
+					bezpiecznym i przyjaznym dla niego otoczeniu.
 				</p>
 			</div>
 			<div className='home'>
 				<Carousel galleryImages={galleryImages}></Carousel>
 			</div>
 			<footer>
-				<p> © Copyright 2023. Created and designed by Rafał Arnista</p>
+				<p>
+					© Copyright 2023. Created and designed by Rafał Arnista <br></br>
+					Icons created by Freepik - Flaticon
+				</p>
 			</footer>
 		</div>
 	);

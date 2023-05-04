@@ -54,26 +54,30 @@ function Contact() {
 				<div className='home__sec'>
 					<section className='home__form'>
 						<h1 className='home__heading heading-form'>Formularz kontaktowy</h1>
-						<form>
+						<form
+							action='https://formsubmit.io/send/rarnista22@gmail.com'
+							method='POST'>
 							<label>
 								Imię <span>*</span> <br></br>
-								<input type='text' required></input>
+								<input type='text' id='name' name='name' required></input>
 								<br></br>
 								Nazwisko <span>*</span> <br></br>
-								<input type='text' required></input>
+								<input type='text' id='surname' name='surname' required></input>
 								<br></br>
 								Nr tel. <span>*</span> <br></br>
-								<input type='number' required></input>
+								<input type='number' id='tel' name='tel' required></input>
 								<br></br>
 								E-mail <span>*</span> <br></br>
-								<input type='text' required></input>
+								<input type='text' id='e-mail' name='e-mail' required></input>
 								<br></br>
 								Wiadomość
 								<br></br>
-								<textarea></textarea>
+								<textarea id='message' name='message'></textarea>
+								<button type='submit' className='form-map_send'>
+									Wyślij
+								</button>
 							</label>
 						</form>
-						<button className='form-map_send'>Wyślij</button>
 					</section>
 					<section className='home__map'>
 						<h1 className='home__heading'>Nasza lokalizacja</h1>
@@ -82,7 +86,10 @@ function Contact() {
 				</div>
 			</div>
 			<footer>
-				<p> © Copyright 2023. Created and designed by Rafał Arnista</p>
+				<p>
+					© Copyright 2023. Created and designed by Rafał Arnista <br></br>
+					Icons created by Freepik - Flaticon
+				</p>
 			</footer>
 		</div>
 	);

@@ -129,8 +129,7 @@ function Uslugi() {
 						Warto udać się do psychoterapeuty, jeśli doświadczasz trudności
 						emocjonalnych lub psychicznych, które utrudniają Twoje codzienne
 						funkcjonowanie, relacje z innymi ludźmi lub osiągnięcie swoich celów
-						życiowych. Oto kilka sygnałów, które mogą wskazywać, że warto
-						rozważyć terapię:
+						życiowych.
 					</p>
 					<p className='home__box description'>
 						Oto kilka sygnałów, które mogą wskazywać, że warto skonsultować się
@@ -230,7 +229,10 @@ function Uslugi() {
 				</article>
 			</div>
 			<footer>
-				<p> © Copyright 2023. Created and designed by Rafał Arnista</p>
+				<p>
+					© Copyright 2023. Created and designed by Rafał Arnista <br></br>
+					Icons created by Freepik - Flaticon
+				</p>
 			</footer>
 		</div>
 	);

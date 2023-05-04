@@ -12,6 +12,7 @@ import { useState } from "react";
 import { questions } from "./components/questions";
 import Collapsible from "./components/collapsible";
 import phone_icon from "./components/galery/phone.png";
+import fb_logo from "./components/galery/facebook.png";
 function Home() {
 	let navigate = useNavigate();
 	const routeChange = () => {
@@ -39,28 +40,23 @@ function Home() {
 					Psychologicznej
 				</h1>
 				<p className='home__description--home'>
-					Gabinet psychologiczny "Bezpieczna Przystań" to miejsce, w którym
-					każda osoba może poczuć się bezpiecznie i komfortowo, a także otrzymać
-					wsparcie i pomoc w trudnych sytuacjach emocjonalnych. Gabinet
-					prowadzony jest przez wykwalifikowanych psychologów, którzy oferują
+					"Bezpieczna Przystań" to miejsce, w którym każda osoba może poczuć się
+					bezpiecznie i komfortowo, a także otrzymać wsparcie i pomoc w trudnych
+					sytuacjach emocjonalnych. Gabinet prowadzony jest przez
+					wykwalifikowanych psychologów oraz psychoterapeutów, którzy oferują
 					profesjonalną pomoc w zakresie psychoterapii, poradnictwa oraz
 					konsultacji psychologicznych. Pracując z różnymi problemami, takimi
 					jak zaburzenia nastroju, lęki, problemy w relacjach, trudności w
-					radzeniu sobie ze stresem czy kryzysy życiowe, psycholog stosuje
+					radzeniu sobie ze stresem czy kryzysy życiowe, specjalista stosuje
 					podejście indywidualne i holistyczne, biorąc pod uwagę potrzeby i
 					sytuację każdej osoby. Nasz gabinet to także miejsce, w którym panuje
-					atmosfera empatii, zrozumienia i szacunku dla każdej osoby. Gabinet
-					stawia na zaufanie i współpracę, co pozwala na budowanie trwałych i
-					pozytywnych relacji z klientami. W gabinecie psychologicznym
-					"Bezpieczna przystań" znajdują się przestronne i komfortowe
-					pomieszczenia, zapewniające prywatność i intymność, co jest
-					szczególnie ważne w czasie terapii. Ponadto, gabinet oferuje
-					elastyczny grafik, a także możliwość konsultacji online, co pozwala na
-					dostępność pomocy w każdym momencie. Wszystko to sprawia, że gabinet
-					psychologiczny "Bezpieczna przystań" jest miejscem, w którym każda
-					osoba może znaleźć wsparcie, zrozumienie i pomoc w trudnych chwilach,
-					a także rozwijać swoje umiejętności radzenia sobie z emocjami i
-					wyzwaniami życiowymi.
+					atmosfera empatii, zrozumienia i szacunku dla każdej osoby. Ponadto,
+					oferujemy elastyczny grafik, a także możliwość konsultacji online, co
+					pozwala na dostępność pomocy w każdym momencie. Wszystko to sprawia,
+					że "Bezpieczna przystań" jest miejscem, w którym każda osoba może
+					znaleźć wsparcie, zrozumienie i pomoc w trudnych chwilach, a także
+					rozwijać swoje umiejętności radzenia sobie z emocjami i wyzwaniami
+					życiowymi.
 				</p>
 			</div>
 			<hr></hr>
@@ -72,8 +68,8 @@ function Home() {
 						<p>
 							Pomoc psychologa może być przydatna w wielu sytuacjach i dla
 							różnych osób. Psycholog może pomóc w rozwiązaniu problemów
-							emocjonalnych, psychicznych lub zachowawczych, a także w radzeniu
-							sobie z trudnościami w życiu osobistym i zawodowym.
+							emocjonalnych, psychicznych lub związanych z zachowaniem, a także
+							w radzeniu sobie z trudnościami w życiu osobistym i zawodowym.
 						</p>
 					</section>
 				</div>
@@ -81,12 +77,12 @@ function Home() {
 					<section className='home__box item--last'>
 						<h2>Psychoterapia</h2>
 						<p>
-							Psychoterapia jest zalecana w sytuacjach, gdy osoba ma poważne
-							problemy emocjonalne lub psychiczne, które wymagają bardziej
+							Psychoterapia jest zalecana w sytuacjach, gdy osoba ma problemy
+							emocjonalne lub natury psychicznej, które wymagają bardziej
 							intensywnego i długotrwałego wsparcia niż jednorazowa wizyta u
 							psychologa. Psychoterapia jest procesem terapeutycznym, który
 							obejmuje regularne spotkania z terapeutą, mające na celu pomóc
-							osoby w przepracowaniu trudnych emocji i problemów życiowych.
+							osobie w przepracowaniu trudnych emocji i problemów życiowych.
 						</p>
 					</section>
 				</div>
@@ -97,7 +93,7 @@ function Home() {
 				<div className='home__icons--picture'>
 					<section>
 						<img className='home__icons--element' src={children}></img>
-						<p className='home__icons--down'>Dzieci</p>
+						<p className='home__icons--down'>Dzieci*</p>
 					</section>
 					<section>
 						<img className='home__icons--element second' src={youth}></img>
@@ -108,9 +104,12 @@ function Home() {
 						<p className='home__icons--down'>Dorośli</p>
 					</section>
 					<section>
-						<img className='home__icons--element' src={senior}></img>
+						<img className='home__icons--element last' src={senior}></img>
 						<p className='home__icons--down--last'>Seniorzy</p>
 					</section>
+				</div>
+				<div className='home__information'>
+					<p>* Przyjmujemy dzieci od 7 roku życia.</p>
 				</div>
 			</div>
 			<hr></hr>
@@ -133,8 +132,18 @@ function Home() {
 					</section>
 				</div>
 			</div>
+			<hr></hr>
+			<div className='home'>
+				<h2 className='home__heading large'>Bądź z nami na bieżąco!</h2>
+				<a href='https://www.facebook.com/profile.php?id=100066750367342'>
+					<img className='home__icons--fb' src={fb_logo} alt='facebook'></img>
+				</a>
+			</div>
 			<footer>
-				<p> © Copyright 2023. Created and designed by Rafał Arnista</p>
+				<p>
+					© Copyright 2023. Created and designed by Rafał Arnista <br></br>
+					Icons created by Freepik - Flaticon
+				</p>
 			</footer>
 		</div>
 	);
