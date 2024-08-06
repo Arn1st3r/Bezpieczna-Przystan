@@ -21,17 +21,17 @@ function Cennik() {
 					<tr className='home__table-item'>
 						<td>Konsultacja psychologiczna</td>
 						<td>50 min. </td>
-						<td>150 zł</td>
+						<td>170 zł</td>
 					</tr>
 					<tr className='home__table-item'>
 						<td>Konsultacja psychoterapetyczna</td>
 						<td>50 min.</td>
-						<td>150 zł</td>
+						<td>170 zł</td>
 					</tr>
 					<tr className='home__table-item'>
 						<td>Psychoterpia indywidualna</td>
 						<td>50 min.</td>
-						<td>150 zł</td>
+						<td>170 zł</td>
 					</tr>
 					<tr className='home__table-item'>
 						<td>Opinia psychologiczna*</td>
