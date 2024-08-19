@@ -10,6 +10,12 @@ import Uslugi from "./services.js";
 function App() {
 	return (
 		<div>
+			<Helmet>
+			<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="be65bb22-0a38-4120-9fa3-3737460ffa76" data-blockingmode="auto" type="text/javascript"></script>
+			</Helmet>
+			<body>
+			<script id="CookieDeclaration" src="https://consent.cookiebot.com/be65bb22-0a38-4120-9fa3-3737460ffa76/cd.js" type="text/javascript" async></script>
+			</body>
 			<BrowserRouter>
 				<Routes>
 					<Route path='/' element={<Home />} />
