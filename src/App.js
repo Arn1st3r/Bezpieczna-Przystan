@@ -6,7 +6,7 @@ import Contact from "./contact.js";
 import Cennik from "./price_list.js";
 import Gabinet from "./office.js";
 import Uslugi from "./services.js";
-
+import { Helmet } from "react-helmet";
 function App() {
 	return (
 		<div>
