@@ -40,11 +40,11 @@ export default function Collapsible() {
 						O nas
 					</Link>
 				</li>
-				<li>
+				{/* <li>
 					<Link className='menu__link' to='/Cennik'>
 						Cennik
 					</Link>
-				</li>
+				</li> */}
 				<li>
 					<Link className='menu__link' to='/Gabinet'>
 						Gabinet
